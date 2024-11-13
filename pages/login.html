@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>                             
+    <!-- comment by Senesh E116448 13-07-22 | header section
+    library logo and search bar and login and sign up button included
+    in header_top class and navagation bar are there......-->
+    <header>
+        <div class="header">
+            <div class="header_top">
+                <div class="header_top_left">
+                    <img src="../image/logo.png" alt="logo">
+                </div>
+                <div class="header_top_right">
+                    <input type="search" placeholder="Search Book">
+                    <a href="#">Search</a>
+                    <a href="#" class="loging" >Login</a>
+                    <a href="#" class="loging">Sign up</a>
+                </div>                
+            </div>
+        </div>
+    </header><!-- end header section bar-->
+    
+    <nav> <!-- navigation bar-->
+        <div class="nav_bar">
+            <div class="navleft">
+            <div class="nav_bar_left">
+                <a href="../index.html">Home</a></div>
+                <div class="nav_bar_left">
+                    <a href="../pages/catogary.html">Categary</a></div>
+                <div class="nav_bar_left">
+                <a href="../pages/Authors.html">Authors</a></div>
+                <div class="nav_bar_left">
+                <a href="../pages/about.html">About</a></div>
+                <div class="nav_bar_left">
+                <a href="../pages/bookview.html">User Manual</a></div>
+                
+            </div>
+                <div class="nav_bar_right">
+                    <!-- javascript code run for dark mode-->
+                    <img src="../image/moon.png" onclick="darkmode()">                          
+                    <label id="date1">today....!</label>
+                </div>    
+        </div>    
+    </nav><!-- end navigation bar-->
+    
+    <section> <!--feedback section-->
+        <div class="msg_topic"><h1> Create a E-Library Account</h1></div>
+        <div class="msg_topic"><h3> Enter your information </h3></div>
+        <div class="feedback">
+            <form>
+                <div class=label><label for="fname">First Name</label></div>
+                <div class=input><input type="text" id="fname" placeholder="First Name" required><br></div>
+                
+                <div class=label><label for="lname">Last Name</label></div>
+                <div class=input><input type="text" id="lname" placeholder="Last Name" required><br></div>
+                
+                <div class=label><label for="email">Email</label></div>
+                <div class=input><input type="email" id="email" placeholder="email@gmail.com"><br></div>
+                <div class=label><label for="password">Password</label></div>
+                <div class=input><input type="password" id="password" placeholder="Password" required><br></div>
+                <div class=label><label for="cpassword">Re- Enter Password</label></div>
+                <div class=input><input type="password" id="cpassword" placeholder="Confirm" required><br></div>
+            
+                <div class=label><label for="no">Telephone No.</label></div>
+                <div class=input><input type="text" id="no" placeholder="07x - xxxxxxx"><br></div>
+            
+                <div class=label><label for="gender">Gender</label></div>
+                <div class=input><input type="radio" id=male name="gender" value="male">Male
+                <input type="radio" id=female name="gender" value="female" >Female</div>
+            
+                <button type="button" onclick="signin()">Send</button>
+            </form>
+            <div class="message_deails">
+                <div class="message_deails one"><label for="details" id="donemsg">Hello...</label></div>  
+            </div>
+        </div>
+       
+    </section><!--close feedback section-->
+    <!--Footer section-->
+    <footer>
+        <div class="footer">
+            <!--Footer section left side-->
+            <div class="footer_left">
+                <h1>E-Library</h1>
+                <p>Satisft the thirst of knowledge</p>
+            </div>
+            <!--Footer section right side-->
+            <div class="footer_right">
+                <h2><u>Navigation</u></h2><br>
+                <div class="nav_links1">
+                    <a href="#">Porfolio</a>
+                    <a href="#">About us</a>
+                    <a href="#">Out Team</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact us</a>
+                </div>
+                
+                <div class="nav_links1">
+                    <a href="#">Event</a>
+                    <a href="#">Support</a>
+                    <a href="#">Hosting</a>
+                    <a href="#">Careers</a>
+                </div>
+            </div>
+            <!--Footer section center company name-->
+            <div class="footer_center">
+                <img src="../image/ogasta.png" alt="company_logo">
+                <h1>Ogasta IT Solution</h1>
+                <h2>Developed By : Senesh Dilshan</h2>
+                <p>Address :38/c, Nagoda Ihala, Nagoda, Galle. 
+                    Tel : 071 640 29 29 / what's app : 077 458 93 22</p>
+            </div>
+        </div>
+    </footer>
+    <!--Footer section end-->
+    <!-- javascript file external link-->
+    <script src="../js/myscript.js"></script>
+    <!-- close javascript file external link-->
+</body>
+</html>
